@@ -7,8 +7,7 @@ class Settings(BaseSettings):
     APP_NAME: str = "LinaSkinCare"
     APP_ENV: str = "development"
     DEBUG: bool = True
-
-    DATABASE_URL: str = "postgresql+psycopg://postgres:password@localhost:5432/linaskincare"
+    DATABASE_URL: str
 
     model_config = SettingsConfigDict(
         env_file=".env",
